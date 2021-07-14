@@ -65,8 +65,8 @@ Project Structure
 
 1. Clone the repo
   ```
-  $ git clone https://github.com/sinking123/Covid-CoviBuddy.git
-  $ cd CoviBuddy
+  $ git clone https://github.com/sinking123/Covi-Buddy.git
+  $ cd Covi-Buddy
   ```
 
 2. Initialize and activate a virtualenv:
