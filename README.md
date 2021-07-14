@@ -1,17 +1,15 @@
-
 ## Welcome
 
-Hello. Want to get started with Flask quickly? Good. You came to the right place. This Flask application framework is pre-configured with **Flask-SQLAlchemy**, **Flask-WTF**, **Fabric**, **Coverage**, and the **Bootstrap** frontend (among others). This will get your Flask app up and running on Heroku or PythonAnywhere quickly. Use this starter, boilerplate for all you new Flask projects. Cheers!
+CoviBuddy is your friendly Covid Web App aimed at providing vital features in one place.!
 
 <hr>
 
 <hr>
 
-Preview the skeleton app here - [http://www.flaskboilerplate.com/](http://www.flaskboilerplate.com/)
-
-**EXAMPLE APP: [http://flasktaskr.herokuapp.com/](http://flasktaskr.herokuapp.com/)**
-
-**What is Flask?** Flask is a microframework for Python based on Werkzeug and Jinja2.
+### Built With
+* [Bootstrap](https://getbootstrap.com)
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+* [OpenCV](https://docs.opencv.org/4.5.2/d6/d00/tutorial_py_root.html)
 
 Project Structure
 --------
@@ -22,56 +20,27 @@ Project Structure
   ├── README.md
   ├── app.py
   ├── config.py
-  ├── error.log
-  ├── forms.py
-  ├── models.py
   ├── requirements.txt
+  ├── covid_detector
+  │   ├── saved_models
+  │   ├── Covid_Detect.py
+  │   ├── Mask_detect.py
+  │   ├── Haarcascades
   ├── static
   │   ├── css
-  │   │   ├── bootstrap-3.0.0.min.css
-  │   │   ├── bootstrap-theme-3.0.0.css
-  │   │   ├── bootstrap-theme-3.0.0.min.css
-  │   │   ├── font-awesome-3.2.1.min.css
-  │   │   ├── layout.forms.css
-  │   │   ├── layout.main.css
-  │   │   ├── main.css
-  │   │   ├── main.quickfix.css
-  │   │   └── main.responsive.css
   │   ├── font
-  │   │   ├── FontAwesome.otf
-  │   │   ├── fontawesome-webfont.eot
-  │   │   ├── fontawesome-webfont.svg
-  │   │   ├── fontawesome-webfont.ttf
-  │   │   └── fontawesome-webfont.woff
   │   ├── ico
-  │   │   ├── apple-touch-icon-114-precomposed.png
-  │   │   ├── apple-touch-icon-144-precomposed.png
-  │   │   ├── apple-touch-icon-57-precomposed.png
-  │   │   ├── apple-touch-icon-72-precomposed.png
-  │   │   └── favicon.png
   │   ├── img
   │   └── js
-  │       ├── libs
-  │       │   ├── bootstrap-3.0.0.min.js
-  │       │   ├── jquery-1.10.2.min.js
-  │       │   ├── modernizr-2.6.2.min.js
-  │       │   └── respond-1.3.0.min.js
-  │       ├── plugins.js
-  │       └── script.js
   └── templates
       ├── errors
       │   ├── 404.html
       │   └── 500.html
-      ├── forms
-      │   ├── forgot.html
-      │   ├── login.html
-      │   └── register.html
-      ├── layouts
-      │   ├── form.html
-      │   └── main.html
       └── pages
-          ├── placeholder.about.html
-          └── placeholder.home.html
+          ├── API.html
+          └── CoviBuddy.html
+          └── index.pug
+          └── webcam.html
   ```
 
 
@@ -79,8 +48,8 @@ Project Structure
 
 1. Clone the repo
   ```
-  $ git clone https://github.com/sinking123/Covid-Tracker.git
-  $ cd flask-boilerplate
+  $ git clone https://github.com/sinking123/Covid-CoviBuddy.git
+  $ cd CoviBuddy
   ```
 
 2. Initialize and activate a virtualenv:
