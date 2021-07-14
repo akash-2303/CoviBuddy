@@ -11,6 +11,10 @@ CoviBuddy is your friendly Covid Web App aimed at providing vital features in on
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 * [OpenCV](https://docs.opencv.org/4.5.2/d6/d00/tutorial_py_root.html)
 
+
+### Screenshots
+![Covid_Mask_Detector](https://github.com/sinking8/Covi-Buddy/blob/main/screenshots/face_mask.jpeg)
+
 Project Structure
 --------
 
