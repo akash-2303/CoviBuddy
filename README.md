@@ -15,13 +15,12 @@ CoviBuddy is your friendly Covid Web App aimed at providing vital features in on
 
 ### Covid Mask Detector
 ![Covid_Mask_Detector](https://github.com/sinking8/Covi-Buddy/blob/main/screenshots/face_mask.jpeg)
-<hr>
+
 ### Covid Tracker
 ![Covid_Mask_Detector](https://github.com/sinking8/Covi-Buddy/blob/main/screenshots/covid_tracker.png)
-<hr>
+
 ### Covid Detector Quiz
 ![Covid_Mask_Detector](https://github.com/sinking8/Covi-Buddy/blob/main/screenshots/quiz.png)
-<hr>
 
 Project Structure
 --------
