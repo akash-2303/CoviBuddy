@@ -6,14 +6,23 @@ CoviBuddy is your friendly Covid Web App aimed at providing vital features in on
 
 <hr>
 
-### Built With
+## Built With
 * [Bootstrap](https://getbootstrap.com)
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 * [OpenCV](https://docs.opencv.org/4.5.2/d6/d00/tutorial_py_root.html)
 
 
-### Screenshots
+## Screenshots
+
+### Covid Mask Detector
 ![Covid_Mask_Detector](https://github.com/sinking8/Covi-Buddy/blob/main/screenshots/face_mask.jpeg)
+
+### Covid Tracker
+![Covid_Mask_Detector](https://github.com/sinking8/Covi-Buddy/blob/main/screenshots/covid_tracker.png)
+
+### Covid Detector Quiz
+![Covid_Mask_Detector](https://github.com/sinking8/Covi-Buddy/blob/main/screenshots/quiz.png)
+
 
 Project Structure
 --------
