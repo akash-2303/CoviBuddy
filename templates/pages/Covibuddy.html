@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="../../static/css/font-awesome.min.css">
 <link rel="stylesheet" href="../../static/css/owl.theme.css">
 <link rel="stylesheet" href="../../static/css/owl.carousel.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+<link rel="stylesheet" href="../../static/css/chatstyle.css">
 
 <!-- Main css -->
 <link rel="stylesheet" href="../../static/css/style1.css">
@@ -20,9 +22,9 @@
 <!-- Google Font -->
 <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
 
+
 </head>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-
 <!-- =========================
      PRE LOADER       
 ============================== -->
@@ -114,7 +116,7 @@
 			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.3s">
 				<h1>Awareness Video</h1>
 				<h3>Watch this short video about Covid-19 Everyday Precautions.</h3>
-				<p>We aim to educate people about the important practices that everyone should follow in orderto stay safe and healthy.<p>
+				<p>We aim to educate people about the important practices that everyone should follow in order to stay safe and healthy.<p>
 			</div>
 			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.6s">
 				<div class="embed-responsive embed-responsive-16by9">
@@ -321,6 +323,27 @@
 <!-- Back top -->
 <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
 
+<section>
+	<button class="chat-btn"> 
+		<i class="material-icons"> comment </i>
+	</button>
+
+	<div class="chat-popup">
+		<div class="chat-area">
+		 <div class="income-msg">
+			 <img src="C:\Users\Shreyas S\OneDrive\Documents\GitHub\CoviBuddy\static\images\ch.png" class="avatar" alt="">
+			 <span class="msg"> Hi, How can I help you?</span>
+		 </div>   
+		</div>
+
+		<div class="input-area">
+			<input type="text" id="chat" namme="chatbot">
+			<button id="emoji-btn"> &#127773;</button>
+			<button class="submit"> <i class="material-icons"> send</i></button>
+		</div>
+	</div>
+</section>
+
 
 
 <!-- =========================
@@ -333,6 +356,8 @@
 <script src="../../static/js/smoothscroll.js"></script>
 <script src="../../static/js/wow.min.js"></script>
 <script src="../../static/js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+<script src="../../static/js/chatmain.js"></script>
 
 </body>
 </html>
