@@ -12,7 +12,7 @@ class Mlmodel:
 	classifier= RandomForestClassifier(n_estimators= 10, criterion="entropy")
 
 	def __init__(self):
-		curr_dir = os.getcwd()+"\\Dataset"
+		curr_dir = os.getcwd()+"\\chatbot\\Dataset"
 
 		train_data = pd.DataFrame(pd.read_csv(curr_dir+"\\training.csv"))
 		self.y_train_symp = train_data.columns

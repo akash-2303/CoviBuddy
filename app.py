@@ -49,6 +49,11 @@ def home():
 
 
 
+#USER PAGE
+@app.route('/user',methods=['GET','POST'])
+def user():
+	return render_template('pages/chatbot.html')
+
 @app.route('/quiz_sol',methods=['POST','GET'])
 def quiz_sol():
     record = [
@@ -103,6 +108,7 @@ def get_bot_response():
 	class_names = list(model.return_symp_names())
 	dis = ''
 	user = request.args.get('text')
+    
 	if(request.args.get('medi') == 'y'):
 		if(user in class_names):
 				sympts_data[0][class_names.index(user)] =1
