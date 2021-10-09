@@ -6,7 +6,7 @@ from flask import Flask, render_template, request, Response,json
 from chatbot.chatbot import chatbot
 import chatbot.ml_model as mod
 
-
+import numpy as np
 import os
 
 # Open CV
