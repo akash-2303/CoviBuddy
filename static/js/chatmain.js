@@ -28,7 +28,7 @@ function sendmessage() {
   console.log(userInput);
   let temp = `<div class="chat-area">
     <div class="income-msg">
-      <img src="../../static/images/ch.png" class="avatar" alt="">
+      <img src="..\..\static\images\ch.png" class="avatar" alt="">
       <span class="msg"> Hi, How can I help you?</span>
     </div>   
    </div>`;
@@ -44,7 +44,7 @@ submitBtn.addEventListener("click", () => {
   console.log(userInput);
   let temp = `<div class="out-msg">
     <span class="my-msg">${userInput}</span>
-    <img src="../../static/images/ch1.png" class="avatar">
+    <img src="../../static/images/5.png" alt="USER IMAGE">
     </div>`;
 
   chatArea.insertAdjacentHTML("beforeend", temp);
