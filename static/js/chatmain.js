@@ -18,7 +18,6 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 //   chat button toggler
-
 chatBtn.addEventListener("click", () => {
   popup.classList.toggle("show");
 });
