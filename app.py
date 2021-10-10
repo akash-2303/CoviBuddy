@@ -3,8 +3,10 @@
 #----------------------------------------------------------------------------#
 
 from flask import Flask, render_template, request, Response,json
+from chatbot.chatbot import chatbot
+import chatbot.ml_model as mod
 
-
+import numpy as np
 import os
 
 # Open CV
@@ -46,6 +48,11 @@ def home():
     return render_template('pages/Covibuddy.html')
 
 
+
+#USER PAGE
+@app.route('/user',methods=['GET','POST'])
+def user():
+	return render_template('pages/chatbot.html')
 
 @app.route('/quiz_sol',methods=['POST','GET'])
 def quiz_sol():
@@ -93,6 +100,36 @@ def mask_detector():
 def covid_api():
     print("covid_api")
     return render_template('pages/API.html')
+
+@app.route("/get")
+def get_bot_response():
+	model = mod.Mlmodel()
+	sympts_data = np.reshape(np.zeros(132),(1,132))
+	class_names = list(model.return_symp_names())
+	dis = ''
+	user = request.args.get('text')
+    
+	if(request.args.get('medi') == 'y'):
+		if(user in class_names):
+				sympts_data[0][class_names.index(user)] =1
+				dis = model.test_model(sympts_data)
+				return("You might have "+dis)
+
+		elif(user == ''):
+			return('Type something..')
+
+		else:
+			return("Sorry couldn't find")
+
+	elif(request.args.get('medi') == 'n'):
+		resp = str(chatbot.get_response(user))
+		if(resp == 'Do you feel?'):return '' 
+		return str(chatbot.get_response(user))
+
+	else:
+		return('I am sorry, but I do not understand. I am still learning.')
+
+
 
 
 def generate_frames():

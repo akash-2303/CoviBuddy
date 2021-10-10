@@ -1,56 +1,51 @@
-const popup = document.querySelector('.chat-popup');
-const chatBtn = document.querySelector('.chat-btn');
-const submitBtn = document.querySelector('.submit');
-const chatArea = document.querySelector('.chat-area');
-const inputElm = document.getElementById('chat');
-const emojiBtn = document.querySelector('#emoji-btn');
+const popup = document.querySelector(".chat-popup");
+const chatBtn = document.querySelector(".chat-btn");
+const submitBtn = document.querySelector(".submit");
+const chatArea = document.querySelector(".chat-area");
+const inputElm = document.getElementById("chat");
+const emojiBtn = document.querySelector("#emoji-btn");
 const picker = new EmojiButton();
 
+// Emoji selection
+window.addEventListener("DOMContentLoaded", () => {
+  picker.on("emoji", (emoji) => {
+    document.querySelector("input").value += emoji;
+  });
 
-// Emoji selection  
-window.addEventListener('DOMContentLoaded', () => {
+  emojiBtn.addEventListener("click", () => {
+    picker.togglePicker(emojiBtn);
+  });
+});
 
-    picker.on('emoji', emoji => {
-      document.querySelector('input').value += emoji;
-    });
-  
-    emojiBtn.addEventListener('click', () => {
-      picker.togglePicker(emojiBtn);
-    });
-  });        
-
-//   chat button toggler 
-
-chatBtn.addEventListener('click', ()=>{
-    popup.classList.toggle('show');
-})
+//   chat button toggler
+chatBtn.addEventListener("click", () => {
+  popup.classList.toggle("show");
+});
 
 // send msg
-function sendmessage(){
-  console.log(userInput)
-    let temp = `<div class="chat-area">
+function sendmessage() {
+  console.log(userInput);
+  let temp = `<div class="chat-area">
     <div class="income-msg">
-      <img src="C:\Users\Shreyas S\OneDrive\Documents\GitHub\CoviBuddy\static\images\ch.png" class="avatar" alt="">
+      <img src="..\..\static\images\ch.png" class="avatar" alt="">
       <span class="msg"> Hi, How can I help you?</span>
     </div>   
    </div>`;
 
-    chatArea.insertAdjacentHTML("beforeend", temp);
-    inputElm.value = '';
+  chatArea.insertAdjacentHTML("beforeend", temp);
+  inputElm.value = "";
 }
 
+// send msg
+submitBtn.addEventListener("click", () => {
+  let userInput = inputElm.value;
 
-// send msg 
-submitBtn.addEventListener('click', ()=>{
-    let userInput = inputElm.value;
-
-    console.log(userInput)
-    let temp = `<div class="out-msg">
+  console.log(userInput);
+  let temp = `<div class="out-msg">
     <span class="my-msg">${userInput}</span>
-    <img src="C:\Users\Shreyas S\OneDrive\Documents\GitHub\CoviBuddy\static\images\ch1.png" class="avatar">
+    <img src="../../static/images/5.png" alt="USER IMAGE">
     </div>`;
 
-    chatArea.insertAdjacentHTML("beforeend", temp);
-    inputElm.value = '';
-
-})
+  chatArea.insertAdjacentHTML("beforeend", temp);
+  inputElm.value = "";
+});
