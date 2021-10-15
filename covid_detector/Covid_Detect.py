@@ -16,7 +16,8 @@ class Covid_Detect:
         'Severity_Mild':"Your are affected by Covid mildly.",
         'Severity_Moderate': "You are affected by Covid Moderately",
         'Severity_Severe':"You are affected by Covid Severely",
-        'Severity_None':"You are safe from Covid"
+        'Severity_None':"You are safe from Covid",
+        'Other_Severity':"You have been affected from other Disease apart from Covid "
     }
     
     def __init__(self):
@@ -34,4 +35,6 @@ class Covid_Detect:
         else:
             return {"response":self.response_text[label],"status":'OK'}
         
-    def save_model(self):pass
+    def save_model(self):
+        print("Saving the model")
+        return
