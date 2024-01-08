@@ -19,7 +19,7 @@ from pyunpack import Archive
 CURR_DIR = os.getcwd()
 
 # Unpacking Models
-Archive(os.path.join(CURR_DIR,"covid_detector//saved_models","saved_models.rar")).extractall(os.path.join(CURR_DIR,"covid_detector//saved_models"))
+#Archive(os.path.join(CURR_DIR,"covid_detector//saved_models","saved_models.rar")).extractall(os.path.join(CURR_DIR,"covid_detector//saved_models"))
 
 ## Covid Detector
 from covid_detector.Covid_Detect import Covid_Detect
